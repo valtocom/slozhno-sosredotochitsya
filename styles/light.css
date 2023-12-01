@@ -7,7 +7,11 @@
   --subtitle-text-color: #353430;
   --article-text-color: #353430;
   --main-background-image: url(../images/cover-image-light.png);
-  --main-background-color: #FFF1F7;
+  --main-background-color: #fff1f7;
+
+  .header__rec {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,10 +24,10 @@
     --subtitle-text-color: #353430;
     --article-text-color: #353430;
     --main-background-image: url(../images/cover-image-light.png);
-    --main-background-color: #FFF1F7;
-  }
+    --main-background-color: #fff1f7;
 
-  .header__rec {
-    display: none;
+    .header__rec {
+      display: none;
+    }
   }
 }

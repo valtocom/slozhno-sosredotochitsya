@@ -3,7 +3,9 @@
   background-color: var(--main-background-color);
   background-position: center;
   background-attachment: fixed;
-  font-family: IBM Plex Mono;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "IBM Plex Mono", "Arial", sans-serif;
   font-size: 18px;
 }
 
@@ -17,6 +19,7 @@
     "title";
   align-items: center;
   height: 100vh;
+  min-height: 550px;
   padding: 10px;
 }
 
@@ -32,8 +35,50 @@
   }
 }
 
+.header__theme-menu {
+  grid-area: menu;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+}
+
+.header__theme-menu-button {
+  height: 26px;
+  color: var(--accent-color);
+  text-align: center;
+  font-weight: 400;
+  line-height: 100%;
+  background: transparent;
+  cursor: pointer;
+  text-transform: lowercase;
+  border: none;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid currentColor;
+  pointer-events: none;
+}
+
 .header__theme-menu-button:hover {
-  border: 1px solid color-mix(in srgb, var(--accent-color) 40%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--accent-color) 40%, transparent);
   cursor: pointer;
 }
 
@@ -91,10 +136,6 @@
   right: 20px;
 }
 
-.theme_light .header__rec {
-  display: none;
-}
-
 @media (width >= 768px) {
   .header__rec {
     top: 20px;
@@ -122,48 +163,6 @@
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
   background-color: var(--accent-color);
-}
-
-.header__theme-menu {
-  grid-area: menu;
-}
-
-.header__theme-menu-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  gap: 10px;
-}
-
-@media (width >= 1024px) {
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
-  }
-}
-
-.header__theme-menu-button {
-  height: 26px;
-  color: var(--accent-color);
-  text-align: center;
-  font-weight: 400;
-  line-height: 100%;
-  background: transparent;
-  cursor: pointer;
-  text-transform: lowercase;
-  border: none;
-  padding: 0px 13px;
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid currentColor;
-  pointer-events: none;
 }
 
 .header__logo {
