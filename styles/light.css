@@ -7,6 +7,7 @@
   --subtitle-text-color: #353430;
   --article-text-color: #353430;
   --main-background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,6 +20,7 @@
     --subtitle-text-color: #353430;
     --article-text-color: #353430;
     --main-background-image: url(../images/cover-image-light.png);
+    --background-color: #FFF1F7;
   }
 
   .header__rec {
