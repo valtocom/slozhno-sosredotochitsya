@@ -1,8 +1,7 @@
 .page {
-  background: var(--main-background-image);
+  background-image: var(--main-background-image);
   background-position: center;
   background-attachment: fixed;
-  object-fit: cover;
   font-family: IBM Plex Mono;
   font-size: 18px;
 }
