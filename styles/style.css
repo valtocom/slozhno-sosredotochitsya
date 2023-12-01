@@ -4,8 +4,6 @@
   background-attachment: fixed;
   font-family: IBM Plex Mono;
   font-size: 18px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .header {
