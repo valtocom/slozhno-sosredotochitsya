@@ -6,7 +6,7 @@
   --title-text-color: #353430;
   --subtitle-text-color: #353430;
   --article-text-color: #353430;
-  --main-background-image: url(/images/cover-image-light.png);
+  --main-background-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,6 +18,6 @@
     --title-text-color: #353430;
     --subtitle-text-color: #353430;
     --article-text-color: #353430;
-    --main-background-image: url(/images/cover-image-light.png);
+    --main-background-image: url(../images/cover-image-light.png);
   }
 }
