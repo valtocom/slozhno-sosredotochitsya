@@ -20,4 +20,8 @@
     --article-text-color: #353430;
     --main-background-image: url(../images/cover-image-light.png);
   }
+
+  .header__rec {
+    display: none;
+  }
 }
